@@ -9,5 +9,6 @@ LABEL "repository"="http://github.com/octocat/hello-world"
 LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="Octocat <octocat@github.com>"
 
-ADD entrypoint.rb /entrypoint.rb
-ENTRYPOINT ["ruby", "/entrypoint.rb"]
+WORKDIR /integrate
+ADD entrypoint.rb /integrate/entrypoint.rb
+ENTRYPOINT ["ruby", "/integrate/entrypoint.rb"]
