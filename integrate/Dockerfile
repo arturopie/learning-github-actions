@@ -1,8 +1,8 @@
 FROM debian:9.5-slim
 
-LABEL "com.github.actions.name"="Hello World"
-LABEL "com.github.actions.description"="Write arguments to the standard output"
-LABEL "com.github.actions.icon"="mic"
+LABEL "com.github.actions.name"="Integrate"
+LABEL "com.github.actions.description"="Merge PR using --no-ff"
+LABEL "com.github.actions.icon"="cloud"
 LABEL "com.github.actions.color"="purple"
 
 LABEL "repository"="http://github.com/octocat/hello-world"

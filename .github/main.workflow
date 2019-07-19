@@ -1,8 +1,8 @@
 workflow "On push" {
   on = "push"
-  resolves = ["Hello World"]
+  resolves = ["Integrate"]
 }
 
-action "Hello World" {
-  uses = "./action-a"
+action "Integrate" {
+  uses = "./integrate"
 }
