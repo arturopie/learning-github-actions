@@ -6,3 +6,6 @@ puts "GITHUB_EVENT_PATH: #{ENV["GITHUB_EVENT_PATH"]}"
 puts File.read(ENV["GITHUB_EVENT_PATH"])
 
 event = JSON.parse(File.read(ENV["GITHUB_EVENT_PATH"]))
+
+exit 0 unless event["action"] == "labeled" && event["label"]["name"] == "ready-to-integrate"
+
